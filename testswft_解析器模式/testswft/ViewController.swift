@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         
-        let str: String = "1 + 2 + 3 + 4"
+        let str: String = "1 + 2 * 3 * 4 + 30 / 6 * 2 + 10"
         let cal = Calculator(expression: str)
         print("result = \(cal.calculate())")
     }

@@ -13,15 +13,10 @@ class OperationExpression: ExpressionProtocol {
     
     var left: ExpressionProtocol
     var right: ExpressionProtocol
-    var operation: String
     
     init(left: ExpressionProtocol, right: ExpressionProtocol) {
         self.left = left
         self.right = right
-    }
-    
-    init(operation: String) {
-        self.operation = operation
     }
     
     func interpret() -> Int {
